@@ -1,0 +1,19 @@
+Your Practical EDA Workflow
+
+1. Compute Correlation Matrix
+- start with df.corr() to get the full picture of feature relationships across your dataset,
+
+2. Visualize Heatmaps
+- transform the matrix into visual form. Loook for red/blue clusters indicating strong positive/negative correlations
+
+3. Identify Top Target Features
+- sort correlations with your target variable. These features are your prediction power players.
+
+4. Check for multicollinearity
+- look for high inter-feature correlations (|r| > 0.8). Decide whether to address based on your modeling approach.
+
+- Create Scatter Plots 
+- don't rely on correlation alone. Visualize key relationships to catch non-linear patterns and outliers.
+
+- Develop Feature Strategy 
+- based on your analysis, decide: Which features to keep? Which features to transform? Document your reasoning.

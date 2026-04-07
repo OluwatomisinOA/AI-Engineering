@@ -1,0 +1,13 @@
+The right choice depends on your model type, interpretability need, and domain considerations.
+
+1. Drop Redundant Features
+- Remove one feature from each highly correlated pair, preferably keeping the one with stronger target correlation or better interpretability.
+
+2. Combine Features
+- Create composite features through averaging, weighted sums, or domain-infirmed combinations. This preserve information while  reducing dimensionality.
+
+3. Apply Dimensionality Reduction
+- Techniques like PCA transform correlated features into uncorrelated principal components, though at the cost interpretability.
+
+4. Let the Model Handle It
+- Tree-based models and neural networks can work with correlated features.

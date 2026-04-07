@@ -1,0 +1,14 @@
+1. Plot Distributions of Numeric Features
+- Create histograms for every continuous variable to understand their shapes, ranges, and otential transformation needs. This reveals skewness, multi-modal patterns, and distribution families.
+
+2. Check Outliers Visually
+- Use box plots and scatter plots to identify extreme values that might be data errors or legitimate rare cases requiring special handling. Visual outlier detection is more intuitive than statistical test alone
+
+3. Explore Feature-Target Relationships
+- Plot each feature against your target variable using scatter plots for regression or grouped distributions for classification. This reveals predictive relationships and guides feature selection.
+
+4. Inspect Class Balance
+- For classification problems, create bar charts of your target classes and categorical features to detect imbalance issues that might require resampling or weighted models
+
+5. Validate Assumptions Visually
+- Before modeling, verify distributional assumptions through visual inspection. Check for normality, linearity, and homoscedasticity using the appropriate plots for your algorithms.
