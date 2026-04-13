@@ -19,3 +19,7 @@ plt.xlabel("Salary")
 plt.ylabel("Frequency")
 plt.title("Salary Distribution")
 plt.show()
+
+
+Histograms — all numeric columns at once:
+df.hist(figsize(12, 10))
