@@ -1,0 +1,18 @@
+Scatter plots reveal relationships between two continuous variables by plotting individual data points in two-dimensional space. Each point's position encode values for both variables, making patterns of association immediately visible.
+
+1. Identify Correlation
+- Spot negative, positive, or no correlation between features instantly through the overall point pattern.
+
+2. Discover Clusters
+- Reveal natural groupings in your data that might suggest distinct segments or categories.
+
+3. Detect Non-Linear Patterns
+- Identify curved or complex relationships that simple correlation metrics might miss
+
+Code Example:
+
+plt.scatter(df["experience"], df["salary'])
+plt.xlabel("Experience")
+plt.ylabel("Salary")
+plt.title("Experience vs Salary")
+plt.show()
