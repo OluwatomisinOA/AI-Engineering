@@ -1,0 +1,29 @@
+A good workflow beats a good algorithm every time.
+
+The Big Picture of Machine Learning:
+
+1. Problem Definition:
+- clearly articuate the business goal and success metrics
+
+2. Data Collection 
+- identify and gather relevant data sources
+
+3. Data Understadning & EDA
+- explore patterns, distributions and relationships
+
+4. Data Preprocessing
+- Transform raw data into model-ready features
+
+5. Model Training
+- learn patterns from the prepared dataset
+
+6. Model Evaluation
+- measure performance using appropriate metrics
+
+7. Iteration & Improvement
+- refine features, parameters, and models
+
+8. Deployment & Monitoring
+- deploy to production and track performance
+
+
