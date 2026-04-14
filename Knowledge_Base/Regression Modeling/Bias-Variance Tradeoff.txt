@@ -1,0 +1,10 @@
+The Anatomy of Prediction Error
+
+1. Bias
+- Error from simplifying assumptions-missing the true patterns
+2. Variance
+- Error from sensitivity to training data-fitting noise instead of signal
+3. Irreducible Noise
+- Inherent randomness in data-unavoidable baseline error
+
+The Key insight: we can control bias and variance, but they pull in opposite directions. Reducing one typically increases the other.
