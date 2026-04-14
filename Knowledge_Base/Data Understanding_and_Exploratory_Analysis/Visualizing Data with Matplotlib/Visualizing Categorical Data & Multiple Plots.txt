@@ -1,0 +1,26 @@
+Bar Charts for Categories
+
+- Bar charts effectively display the frequency or proportion of categorical variables.
+- Use them to quickly identify underrepresented categories that might cause model bias or require resampling techniques.
+
+Code Example:
+
+df["department"].value_counts().plot(kind="bar")
+plt.xlabel("Department")
+plt.ylabel("Count")
+plt.title("Employees per Department")
+plt.show()
+
+Creating Subplots
+
+- Matplotlib's subplot functionality lets you create multiple visualizations in a single figure, perfect for side-by-side comparisons and comprehensive exploratory analysis.
+- Control figure dimensions and layout to present complementary views of your data simultaneously.
+
+Code Example:
+
+plt.figure(figsize=(10, 4))
+plt.subplot(1,2,1)
+plt.hist(df["salary"])
+pltisubplot(1,2,2)
+plt.boxplot(df["salary"])
+plt.show()
