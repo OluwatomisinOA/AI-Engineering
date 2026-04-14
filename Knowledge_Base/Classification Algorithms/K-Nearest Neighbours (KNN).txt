@@ -1,0 +1,55 @@
+A simple yet powerful classification algorithm that learns by remembering data and making predictions based on similarity.
+
+What is KNN?
+
+- It makes predictions by finding similar examples in your training data.
+- Unlike other algorithm, KNN doesn't build a model during training. Instead, it stores all the data and uses it directly when making predictions.
+- KNN classifies new data points by looking at their nearest neighbours. The class that appears most frequently among neighbors becomes the prediction.
+- While commonly used for classification, KNN also works for regression tasks by averaging the values of nearby neighbors.
+
+How KNN Works:
+The Algorithm Steps
+1. Store Training Data
+- keep all training examples in memory with their labels
+2. Calculate Distances
+- measure distance from new point to all stored points
+3. Find K Neighbors
+- identify the K closest points to the new data point
+4. Majority Vote
+- count labels among neighbors and assign most common class
+
+Measuring "Closeness":
+Distance metrics define how we measure similarity between data points. 
+- Euclidean Distance: the straight line distance between two points.
+- Manhattan Distance: distance measured along axes at right angles, like navigating city blocks. Useful for grid-like data.
+- Minkowski Distance: generalized metric that includes both Euclidean and Manhattan as special cases. Flexible for different scenarios.
+
+Choosing the Value of K:
+
+The parameter K controls the number of neighbors consulted for each prediction. This single parametr dramatically affects model behaviour and creates a fundamental tradeoff in machine learning.
+Small K (e.g., K=1):
+- Very sensitive to noise and outliers
+- Creates complex, wiggly boundaries
+- High variance, low bias
+- Risk of overfitting
+Large K (e.g., K=50):
+- Smoooths out noise effects
+- Creates simler decision boundaries
+- Low variance, high bias
+- Risk of underfitting
+
+Best Practice: use cross-validation to find the optimal K value. Odd values of K help avoid ties in binary classification problems.
+
+Feature is Scaling is Critical:
+Without proper scaling, features with larger ranges will dominate the distance metric and distort predictions.
+
+Common Scaling Methods:
+- Standardization: Mean = 0, Standard Deviation = 1
+- Min-Max Normalization: Scale to range [0, 1]
+- Robust Scaling: Uses median and IQR, handles outliers
+
+Limitations:
+1. Slow Prediction at Scale
+2. Sensitivity to Noise
+3. Memory Intensive
+4. Curse of Dimensionality
