@@ -1,0 +1,46 @@
+Decision Trees: A Visual Classification Model
+
+Decision Trees are one of the most intuitive machine learning model, mirroring the way human naturally makes decisions. They use a tree-like structure to break down complex problems into a series of simple, interpretable rules.
+
+What Makes A Decision Tree?
+
+- Tree-Like Structure
+Hierarchical model branches at each decision point, creating a flowchart of logic
+- Simple Rules
+Each split uses straightforward if-then conditions based feature on thresholds
+- Dual Purpose
+Handles both classification (categories) and regression (continuous values) tasks
+- Highly Interpretable
+Every prediction can be traced through clear decision paths from root to leaf
+
+Anatomy of a Decision Tree:
+
+1. Root Node
+- The starting point where the first split occurs, representing the entire dataset
+2. Internal Nodes
+- Decision points where data split based on feature conditions
+3. Leaf Nodes
+- Terminal nodes containing the final prediction or class label
+4. Decision Paths
+- Paths from root to leaf represents a complete decision rule
+
+Choosing the Best Split:
+
+The Greedy Algorithm Approach
+This greedy strategy evaluates every possible split at every node, measuring how well each one separates the classes. The split with the maximum information gains the win.
+
+- Evaluate All Options: try every feature and every possible  threshold value
+- Measure Quality: calculate impurity reduction for each candidate split
+- Select Winner: Choose the split with maximum information gain
+
+Gini Impurity (The defaullt purity measure) :
+Gini impurity is the probability of incorrectly classifying a randomly chosen element if it were labeled according to the class distribution in the node.
+
+Entropy & Information Gain (An Alternative Quality Measure):
+
+while Gini impurity measures mixing, entropy measures disorder from an information theory perspective. High entropy means high uncertainty about class labels.
+Information gain quantifies how much uncertainty is reduced by a making split-the more disorder we eliminate, the better the split.
+
+1. Calculate Entropy: measure disorder in the node before splitting
+2. Calculate Child Entropy: measure weighted average disorder in resulting child nodes
+3. Compute Information Gain: subtract child entropy from parent entropy to get improvement
