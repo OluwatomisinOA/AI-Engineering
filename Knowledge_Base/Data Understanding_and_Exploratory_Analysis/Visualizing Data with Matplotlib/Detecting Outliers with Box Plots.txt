@@ -1,0 +1,6 @@
+Box plots (also called box-and-whisker plot) provide a standardized visual summary of data distribution. They compactly display five key statistics: minimum, first quartile, median, third quartile, and maximum, while explicitly highlighting outliers as individual points.
+
+Code Example:
+plt.boxplot(df["salary"])
+plt.title("Salary Box PLot")
+plt.show()
