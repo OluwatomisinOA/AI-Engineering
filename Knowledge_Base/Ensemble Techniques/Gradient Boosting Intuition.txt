@@ -1,0 +1,18 @@
+Gradient boosting represents a powerful ensemble technique that has revolutionized machine learning. 
+It build models sequentially, where each new model focuses specifically on correcting the errors made by its predecessors.
+
+
+Parallel vs Sequential Learning:
+
+Bagging(Random Forest):
+- Predictions are averaged together
+- Errors cancel out through averaging
+- Reduces variance in predcitions
+
+Boosting(Gradient Boosting)
+- Predictions are added together
+- Errors are directly corrected
+- Reduces bias in prediction
+
+Key Insight: Bagging reduces variance by averaging independent predictions, while boosting reduces bias by explicitly learning from previous mistakes.
+Boosting doesn't fit the raw target values repeatedly. Instead, it fits the errors made by previous models, creating a progress in the refinement process
