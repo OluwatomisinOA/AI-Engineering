@@ -1,0 +1,15 @@
+What is Unsupervised Learning?
+
+Unsupervised learning is a fundamental approach in machine learning where algorithms learn from data without predefined labels or target variables. It explore data to discover hidden structures, patterns, and relationships that aren't immediately obvious.
+
+
+Core Unsupervised Learning Tasks
+
+- Clustering
+Group similar observations together based on similar feature similarity. Algorithms like K-Means, hierarchical clustering, and DBSCAN partition data into distinct clusters without predefined categories.
+- Dimensionality Reduction
+Reduces the number of features while preserving information. Techniques like PCA and t-SNE simplify complex datasets, making them easier to visualize and analyze.
+-Anomaly Detection
+Identify unsual patterns that deviate from normal behaviour. Critical for fraud detection, system monitoring, and quality control where anomalies represent important events.
+- Density Estimation
+Estimates the underlying probability distribution of data. Helps understand data generation processes and identify regions of high and low probability in the feature space.
