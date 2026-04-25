@@ -1,0 +1,46 @@
+It is designed to discover hidden patterns in unlabeled data. It automatically groups data points into K distinct clusters based on their similarity, using distance as the primary measure.
+
+
+What Problem Does K-Means Solve?
+
+K-Means tackles the fundamental question: How can we automatically discover natural groupings in this data?
+
+The algorithm identifies structure by ensuring that data points within the same cluster share high similarity, while points in different clusters remian distinctly separate.
+
+
+The Core Idea of K-Means
+
+K-Means seprates on a principle: represent each cluster by a central point called centroid, then assign every data point to its nearest centroid.
+
+01 Choose K
+- Decide how many clusters you want to find
+02 Initialize Centroids
+- Place K representative points in the data space
+03 Assign Points
+- Group each data point with its closest centroid
+04 Update Centers
+- Recalculate centroids based on current assignments
+
+
+Choosing the Value of K:
+
+- Elbow Method
+Plot within-cluster sum of squares (inertia) for different K values. Look for the "elbow" where adding clusters yields diminishing returns.
+- Silhouette Score
+Measures how similar points are to their own clusters versus other clusters. SCores range from -1 to 1, with higher values indicating better-defined clusters.
+- Domain Knowledge
+Sometimes business context dictates K-if you're segmenting into premium, standard7, and budget tiers, K=3 is predetermined by strategy.
+
+
+When K-Means Fails
+
+- Initialization Sensitivity
+Random centroid placement can lead to different results each run. Poor initial positions may trap the algorithm in suboptimal local minima.
+Solution: Use K-Means++ initialization or run multiple times
+- Spherical Assumption
+K-Means struggles with non-spherical. elongated, or irregularly-shaped clusters. It forces circular boundaries that may not match your data's true structure. Better option: DBSCAN for arbitrary shapes.
+- Outlier Sensitivity
+Extreme values dramatically pull centroids away from cluster centers, distorting results. A single outlier can corrupt and entire cluster's position.
+Preprocessing: Remove or cap outliers first.
+- Pre-specified K
+Requiring K upfront is both a feature and a limitation-you must estimate the number of clusters before analysis, which isn't possible in exploratory work.
